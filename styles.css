@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.login-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h1 {
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Input field styles */
+label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Login button styles */
+.login-button,
+.autofill-button {
+    width: auto; /* Adjust the width to fit content */
+    padding: 8px 15px;
+    background-color: #1180ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: 5px; /* Add margin to create space between buttons */
+}
+
+/* Apply a special style to the last button in the row to remove margin-right */
+.login-button:last-child,
+.autofill-button:last-child {
+    margin-right: 0;
+}
+
+.login-button:hover,
+.autofill-button:hover {
+    background-color: #002fff;
+}
+
+
+/* Buttons container for one row layout */
+.button-container {
+    display: flex;
+    justify-content: center; /* Horizontally center-align buttons */
+    align-items: center; /* Vertically center-align buttons */
+    flex-wrap: wrap;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

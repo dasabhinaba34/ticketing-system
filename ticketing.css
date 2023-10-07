@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Set the main container to flex and limit the width */
+main {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#ticket-form {
+    max-width: 50%;
+    margin: 0 auto; /* Center the form horizontally */
+    text-align: center;
+}
+
+
+/* Limit the "Issue Ticket" section to take a maximum of 50% */
+.ticketing-box,
+.validation-box {
+    flex-basis: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+    margin: 0 10px; /* Add margin for spacing between boxes */
+}
+
+#ticketing, #validation {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 150px; /* Adjust the width as needed */
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+#guest-details {
+    margin-top: 10px;
+}
+
+#ticket-details {
+    margin-top: 10px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+
+
+/* ... Previous styles ... */
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex-basis: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer link styles */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Add hover effect for links */
+footer a:hover {
+    color: #e44d26; /* Change link color on hover */
+}
+
+/* Style for the Logout button */
+.logout-button {
+    padding: 8px 16px;
+    background-color: #0062ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Add hover effect for the Logout button */
+.logout-button:hover {
+    background-color: #0400ff; /* Change button background color on hover */
+}
+
+/* ... Rest of the styles ... */
